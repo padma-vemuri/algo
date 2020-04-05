@@ -1,0 +1,2 @@
+# algo
+Solving trivial algo
