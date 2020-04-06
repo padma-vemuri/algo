@@ -24,12 +24,12 @@ Minimize the total number of operations.
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 
-var swap = function (nums, n, m) {
+const swap = (nums, n, m) => {
   const temp = nums[n];
   nums[n] = nums[m];
   nums[m] = temp;
 };
-var moveZeroes = function (nums) {
+const moveZeroes = (nums) => {
   for (i = 0, lastNonZeroFoundAt = 0; i < nums.length; i++) {
     if (nums[i] !== 0) {
       swap(nums, lastNonZeroFoundAt++, i);
